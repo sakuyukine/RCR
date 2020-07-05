@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-device-width: 400px) { .left{ float:none;} }/*自适应设置*/
+/*内容导航*/
+		/*div框*/
+	.contentGuide{
+			width: 270px;/*宽*/
+			float: right;/*右浮动*/
+			
+		}
+		/*ul*/
+	.contentGuide ul{
+			background-color: rgba(255,255,255,0.47);/*背景颜色*/
+			background-size:230px 500px; /*背景大小*/
+			list-style: none;/*消除默认样式*/
+			border-radius: 50px;/*圆角*/
+			position: fixed;/*固定导航*/
+			
+		}
+		/*li*/
+	.contentGuide ul li{
+			font-family: "楷体";/*字体*/
+			font-size: 25px;/*字号*/
+			letter-spacing: 2px;/*字符间距*/
+			line-height: 50px;/*行高*/
+			color: rgba(0,0,0,1.00);/*字体颜色*/
+			padding: 6px;/*内填充*/
+			height: 50px;/*高*/
+			width: 279px;/*宽*/
+			background-color: rgba(255,255,255,0.47);/*背景颜色*/
+			border-radius: 20px;/*圆角*/
+			transition: all 0.3s;/*过渡*/
+		
+		}
+	a{
+		text-decoration: none;
+		color: rgba(9,8,8,1.00);/*字体颜色*/
+		}
+	li a:link{/*未被访问*/
+			color: rgba(0,0,0,1.00);/*颜色*/
+		}
+	li:hover{/*鼠标移动到的位置*/
+			transform: scale(1.5);/*变大*/
+		}
+	li a:visited{/*已被访问*/
+			color: rgba(50,29,29,1.00);/*颜色*/
+		}
+	.login {
+    background-image: url(../img/login.png);/*背景图*/
+    width: 176px;/*宽*/
+    height: 60.8px;/*高*/
+    background-size: 100%;/*背景大小*/
+    margin-left: -25px;/*左外边距*/
+    display: flex;/*弹性盒子*/
+    justify-content: center;/*空白*/
+    align-items: center;/*居中*/
+}
+		/*分割线*/
+		 .login i::before {
+    content: "|";
+    margin: 0 5px;
+}
+/*背景样式*/
+body {
+    background-image: url(../img/background.png);/*背景图片*/
+	width: auto;/*宽*/
+    height: 100%;/*高*/
+    position: relative;/*定位*/
+	
+}/*背景样式*/
+
+.position .position-1 {
+    position: absolute;/*定位*/
+    top: 100px;/*上距离*/
+    left: 260px;/*左*/
+    width: 525px;/*宽*/
+}
+
+.position .position-2 {
+    position: absolute;/*定位*/
+    top: 300px;/*上距离*/
+    left: 4px;/*左距离*/
+    width: 600px;/*宽*/
+}
+.position .Introduction {
+    display: flex;/*弹性盒子*/
+    flex-flow: column wrap;/*让弹性盒的元素以相反的顺序显示，且在必要的时候进行拆行*/
+    justify-content: space-between;/*空白*/
+    position: absolute;/*定位*/
+    top: 300px;/*上距离*/
+    left: 500px;/*左距离*/
+    width: 300px;/*宽*/
+    height: 150px;/*高*/
+}
+.position .Introduction p {
+    line-height: 40px;/*行高*/
+    font-size: 18px;/*字号*/
+}
+.content{
+	width: 100%;/*宽*/
+	height: 670px;/*高*/
+}

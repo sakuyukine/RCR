@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-device-width: 400px) { .left{ float:none;} }/*自适应设置*/
+header{
+    width: 100%;/*宽*/
+    height: 50px;/*高*/
+}
+
+header ul{
+    width: 480px;/*宽*/
+    margin: 0px auto;/*外边距*/
+}/*导航栏样式*/
+
+header ul li{
+    float: left;/*左浮动*/
+    line-height: 50px;/*行高*/
+    width: 80px;/*宽*/
+    text-align: center;/*文本居中*/
+    margin: 0px 20px;/*外边距*/
+}
+
+header ul li a{
+    color: #31444F;/*颜色*/
+    cursor: pointer;/*不同的光标*/
+    font-size: 16px;/*字号*/
+    font-weight: 540;/*字体粗细*/
+    text-decoration: none;/*默认*/
+}/*取消导航栏首页的固定样式*/
+
+header ul li a:hover{
+    text-decoration: none;/*默认*/
+}
+
+header div{
+    height: 50px;/*高*/
+    width: 50px;/*宽*/
+    float: right;/*右浮动*/
+    margin-right: 250px;/*右外边距*/
+    line-height: 50px;/*行高*/
+    text-align: center;/*文本居中*/
+}
+
+header div img{
+    width: 25px;/*宽*/
+    height: 25px;/*高*/
+    margin: 12.5px auto;/*外边距*/
+}
+/*注册样式*/
+.underline{
+    border-bottom: 3px solid #31444F;
+}
+

@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-device-width: 400px) { .left{ float:none;} }/*自适应设置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.word{
+	display: inline-block;/*块*/
+	text-indent: 2em;/*首行缩进*/
+	font-family:"仿宋";/*字体*/
+	font-size: 23px;/*字号*/
+	color: rgba(0,0,0,1.00);/*颜色*/
+	line-height: 40px;/*行高*/
+	letter-spacing: 5px;/*字符间距*/	
+}
+.background2{/*背景图2*/
+	background-size: auto;/*背景图大小*/
+	background-color: rgba(104,101,101,0.52);/*背景颜色*/
+	padding-bottom: 120px;
+}
+.informationOne{
+	text-align: center;/*居中*/
+}
+a{
+			text-decoration: none;
+			color: rgba(9,8,8,1.00);/*字体颜色*/
+		}
+.jspicture{
+	background-color: rgba(252,249,249,0.52);/*颜色*/
+	text-align: center;/*居中*/
+	padding-top: 30px;/*上内填充*/
+	background-position: center;/*背景位置*/
+	width: 600px;/*宽*/
+	height: 430px;/*高*/
+	margin: auto;/*外边距*/
+	margin-top: 50px;/*上外边距*/
+}

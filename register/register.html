@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--将浏览器宽度虚拟成一个特定的值，使跨设备显示基本一致-->
+    <title>注册</title>
+   <!--引入css-->
+    <link rel="stylesheet" href="../register/css/reset.css">
+    <link rel="stylesheet" href="../register/css/base.css">
+    <link rel="stylesheet" href="../register/css/login.css">
+   
+</head>
+<body>
+    <header>
+            <ul>
+                <li class="sort underline" onclick="underline(this)"><a href="../index.html">首页</a></li>
+                
+            </ul>
+            <div><a href="../register/login.html"><img src="../register/img/own.png" alt="人物标志"></a><!--图标导入--></div>
+    </header>
+
+    <div class="main">
+        <div class="m-bgd">
+            <div class="login">
+                <img src="../register/img/logo-red.png" alt="中间标志"><!--阴影引导部分-->
+                <input type="text" placeholder="昵称">
+                <input type="text" placeholder="手机">
+                <input type="text" placeholder="密码">
+                <div>注册</div>
+            </div>
+        </div>
+        <div class="m-left">
+            <img src="../register/img/logo-white.png" alt="左侧标志"><!--左侧的图标-->
+        </div>
+        <div class="m-right">
+            <a href="../register/index.html"><img src="../register/img/x.png" alt="右侧标志"></a><!--右侧的图标-->
+        </div>
+    </div>
+
+
+    <script>
+        function underline(event){
+            for(var i = 0; i < 4;i++){
+                document.getElementsByClassName("sort")[i].classList.remove("underline");
+            }
+            event.classList.add("underline");
+        }
+    </script><!--跳转-->
+</body>
+</html>

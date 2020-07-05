@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-device-width: 400px) { .left{ float:none;} }/*自适应设置*/
+body {
+	line-height: 1;/*行高*/
+}
+ol, ul {
+	list-style: none;/*列表属性*/
+}
+blockquote, q {
+	quotes: none;/*设置嵌套引用的引号类型*/
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+table {
+	border-collapse: collapse;/*为表格设置合并边框模型*/
+	border-spacing: 0;/*设置表格的边框间距*/
+}

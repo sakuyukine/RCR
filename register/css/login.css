@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-device-width: 400px) { .left{ float:none;} }/*自适应设置*/
+.main{
+    width: 100%;/*宽*/
+    height: 600px;/*高*/
+    position: relative;/*相对定位*/
+}
+
+.m-bgd{
+    width: 90%;/*宽*/
+    height: 570px;/*高*/
+    margin: 10px auto;/*外边距*/
+    padding: 1px;/*内填充*/
+    background-size: 100%;/*背景大小*/
+	background-image: url( ../img/background.png);/*背景图*/
+}
+
+.m-left{
+    position: absolute;/*绝对定位*/
+    width: 150px;/*宽*/
+    height: 80px;/*高*/
+    top:38%;/*上*/
+    left: 10px;/*左边*/
+    background-color: #31444F;/*背景颜色*/
+    text-align: center;/*文本居中*/
+}/*左边图片样式*/
+
+.m-left img{
+    width: 50px;/*宽*/
+    height: 50px;/*高*/
+    margin: 15px auto;/*外边距*/
+}
+
+.m-right{
+    position: absolute;/*定位*/
+    width: 150px;/*宽*/
+    height: 80px;/*高*/
+    top:38%;/**/
+    right: 10px;/*左边*/
+    background-color: #31444F;/*背景颜色*/
+    text-align: center;/*文本居中*/
+}
+/*右边图片样式*/
+.m-right img{
+    width: 30px;/*宽*/
+    height: 30px;/*高*/
+    margin: 25px auto;/*内边距*/
+}
+
+.login{
+    width: 30%;/*宽*/
+    height: 400px;/*高*/
+    margin: 80px auto;/*内边距*/
+    text-align: center;/*文本居中*/
+}
+
+.login img{
+    height: 80px;/*高*/
+    width: 80px;/*宽*/
+    margin: 20px;/*外边距*/
+}
+
+.login input{
+    width: 80%;/*宽*/
+    height: 40px;/*高*/
+    margin: 20px auto;/*外边距*/
+    background:rgba(256, 256, 256, 0.7);/*背景颜色*/
+    border: 1px solid #31444F;/*线*/
+}/*输入样式*/
+
+.login div{
+    width: 80%;/*宽*/
+    height: 40px;/*高*/
+    cursor: pointer;/*不同的光标*/
+    color: aliceblue;/*颜色*/
+    text-align: center;/*文本居中*/
+    line-height: 40px;/*行高*/
+    margin: 10px auto;/*外边距*/
+    background-color: #31444F;/*背景颜色*/
+}
+
+.login div a{
+    color: aliceblue;/*颜色*/
+    text-decoration: none;/*默认去除*/
+}
+
+.zc {
+    float: right;/*右浮动*/
+    color: #31444F;/*颜色*/
+    margin-top: 10px;/*上外边距*/
+    margin-right: 40px;/*右外边距*/
+}/*注册样式*/

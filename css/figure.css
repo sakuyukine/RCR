@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-device-width: 400px) { .left{ float:none;} }/*自适应设置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+			text-decoration: none;/*默认*/
+			color: rgba(9,8,8,1.00);/*字体颜色*/
+		}
+.main{
+    width: auto;/*宽*/
+    height: auto;/*高*/
+    position: relative;/*定位*/
+
+}/*背景样式*/
+
+.m-bgd{
+    width: 100%;/*宽*/
+    height:100% ;/*高*/
+    padding: 100px;/*内填充*/
+    text-align: center;/*文本居中*/
+    background-size: 100%; /*背景大小*/
+}
+.m-bgd span{
+    width: 30%;/*宽*/
+    margin-left: -800px;/*左外边距*/
+}
+.m-bgd span{
+    color: #682306;/*颜色*/
+    font-size: 25px;/*字号*/
+    width: 100%;/*宽*/
+    
+}/*间隔样式*/
+
+.BJimg{
+    height: 90%;/*高*/
+    display: flex;
+    justify-content: flex-start;/*空白*/
+    align-items: center;/*居中*/
+}/*图片排列*/
+
+.ddd{
+    height: 400px;/*高*/
+    width: 280px;/*宽*/
+    background-size: 100% 100%;/*背景大小*/
+    margin: 0px 10px;/*外边距*/
+    flex-shrink: 0;/*空间收缩0*/
+}/*图片样式*/
+
+.ddd div{
+    height: 100%;/*高*/
+}
+
+.mask{
+    width: 100%;/*宽*/
+    height: 100%;/*高*/
+    background: rgba(0, 0, 0, 0.6);/*背景*/
+}
+
+.BJimg img:hover{
+    background-color: black;/**/
+    opacity: 0.5;/**/
+}
+ol, ul {
+	list-style: none;/*默认*/
+}
+blockquote, q {
+	quotes: none;/*设置嵌套引用的引号类型*/
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;/*表格设置合并边框模型*/
+	border-spacing: 0;/*设置表格的边框间距*/
+}
+.background5{
+	background-repeat: repeat-x;/*背景平铺*/
+	background-attachment: fixed;/*固定图片*/
+}

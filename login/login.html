@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--将浏览器宽度虚拟成一个特定的值，使跨设备显示基本一致-->
+    <title>登录</title>
+	<!--引入css-->
+    <link rel="stylesheet" href="../login/css/reset.css">
+    <link rel="stylesheet" href="../login/css/base.css">
+    <link rel="stylesheet" href="../login/css/login.css">
+   
+</head>
+<body>
+    <header>
+            <ul>
+                <li class="sort underline" onclick="underline(this)"><a href="../index.html">首页</a></li>
+                
+            </ul>
+            <div><a href="../login/login.html"><img src="../login/img/own.png" alt="人物标志"></a></div>
+    </header>
+
+    <div class="main">
+        <div class="m-bgd">
+            <div class="login">
+                <img src="../login/img/logo-red.png" alt="图标">
+                <input type="text" placeholder="账号"><!--阴影引导部分-->
+                <input type="text" placeholder="密码">
+                <div><a href="../login/index.html">登录</a></div>
+                <a class="zc" href="../login/register.html">去注册？</a>
+            </div>
+        </div>
+        <div class="m-left">
+            <img src="../login/img/logo-white.png" alt="左侧标志"><!--左侧标志-->
+        </div>
+        <div class="m-right">
+            <a href="../login/index.html"><img src="../login/img/x.png" alt="右侧标志"></a><!--右侧标志-->
+        </div>
+    </div>
+    <script>
+        function underline(event){
+            for(var i = 0; i < 4;i++){
+                document.getElementsByClassName("sort")[i].classList.remove("underline");
+            }
+            event.classList.add("underline");
+        }
+    </script><!--跳转部分-->
+</body>
+</html>

@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-device-width: 400px) { .left{ float:none;} }/*自适应设置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	background-image: url( ../img/background2.bmp);/*背景图片*/
+	background-attachment: fixed;/*固定图片*/
+	background-repeat: no-repeat;/*不平铺*/
+	background-position: top;/*背景位置*/
+	background-size:1200px;/*背景大小*/
+}
+.section-header {/*标题与主体的距离等*/
+	margin-bottom: 4px;
+	padding-bottom: 27px;
+	position: relative;
+}
+.section-header::before {/*标题与标题之间的格式内容*/
+	
+	background-repeat: no-repeat;/*背景平铺*/
+	bottom: 0px;/*底*/
+	left: 0;/*左距离*/
+	height: 4px;/*高*/
+	width: 63px;/*宽*/
+	position: absolute;/*定位*/
+}
+.section-header h6 {/*标题不同类别文物修复步骤相关样式*/
+	color:#956234;/*颜色*/
+	font-size: 20px;/*字体大小*/
+	font-weight: 600;/*字体粗细*/
+	font-style: italic;/*字体样式*/
+	margin-top: 0;/*上外边距*/
+	text-transform: capitalize;/*转换不同元素中的文本*/
+	letter-spacing: 1.05px;/*字符间距*/
+}
+.section-header h3 {/*标题2文物的相关样式*/
+	color:#6D5534;/*颜色*/
+	display: inline-block;/*转换行内块元素*/
+	font-family: 'Raleway', sans-serif;/*字体*/
+	font-size: 30px;/*字号*/
+	font-weight: 600;/*字体粗细*/
+	line-height: 36px;/*行高*/
+	letter-spacing: 1.28px;/*字符间距*/
+	margin-top: 0;/*上外边距*/
+	margin-bottom: 0;/*下外边距*/
+	position: relative;/*定位你*/
+	text-transform: uppercase;}/*转换不同元素中的文本*/
+.section-header.text-center::before {
+	margin: 0 auto;/*外边距*/
+	right: 0;/*右边距*/
+}
+
+
+.how-we-section {/*标题2相关样式*/
+	background-color: #f7f7f7;/*颜色*/
+	padding-top: 150px;/*上内填充*/
+	padding-bottom: 100px;/*下内填充*/
+	margin-bottom: 75px;/*下外边距*/
+	margin-top: 75px;/*下外边距*/
+}
+.how-we-box {/*盒子样式*/
+	z-index: 1;/**/
+	margin-bottom: 33px;/*下外边距*/
+}
+.how-we-box::before,
+.how-we-box::after {/*盒子样式*/
+	border-top: 1px dashed rgb(201,152,51);/**/
+	height: 1px;/*高*/
+	width: 50%;/*宽*/
+	position: absolute;/*定位*/
+	top: 55px;/*上边距*/
+	z-index: -1;/**/
+}
+.how-we-box::before {/*盒子样式*/
+	left: 0;/*左*/
+}
+.how-we-box::after {
+	right: 0;/*右*/
+}
+.how-we-box i,
+.how-we-box h5 {
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;	
+}
+.how-we-box i {/*圆圈内的字体字号格式*/
+	background-color: #fff;/*颜色*/
+	border: 1px solid #c9c9c9;/*框*/
+	border-radius: 50%;/*圆*/
+	color:#6D5534;/*颜色*/
+	font-size: 36px;/*字体大小*/
+	height: 112px;/*高*/
+	width: 112px;/*宽*/
+	display: block;/*转换元素*/
+	margin: 0 auto;/*外边距*/
+}
+.how-we-box i::before {
+	line-height: 112px;/*行高*/
+}
+.how-we-box h5 {
+	font-family: 'Raleway', sans-serif;/*字体*/
+	font-size: 16px;/*字号*/
+	font-weight: 600;/*字体粗细*/
+	line-height: 36px;/*行高*/
+	letter-spacing: 0.56px;/*字符间距*/
+	margin-top: 18px;/*上外边距*/
+	margin-bottom: 3px;/*下外边距*/
+}
+.how-we-box:hover h5 {
+	color:#B3764D;/*颜色*/
+}
+.how-we-box p {/*文字样式*/
+	color: #555555;/*颜色*/
+	font-size: 13px;/*字体大小*/
+	line-height: 24px;/*行高*/
+	letter-spacing: 0.455px;/*字符间距*/
+}
+.how-we-box:hover i {
+	border-color: transparent;/*框*/
+	background-color:#CC963F;/*背景*/
+	color: #fff;
+}
+.how-we-section.no-bg {
+	background-color: transparent;
+
+@media (max-width: 479px) {
+	/* + Header */
+	/* - Header 1 */
+	.analysis-btn { 
+		display: none;/**/
+	}
+	
+	
+	.how-we-box {/*盒子样式*/
+		width: 100%;/*宽*/
+	}
+	.how-we-box::before,
+	.how-we-box::after {
+		display: none;
+	}
+}

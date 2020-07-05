@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-device-width: 400px) { .left{ float:none;} }/*自适应设置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.word{
+	padding-bottom: 30px;/*上内填充*/
+	padding-top: 70px;/*下内填充*/
+	display: inline-block;/*块*/
+	text-indent: 2em;/*首行缩进*/
+	font-family:"仿宋";/*字体*/
+	font-size: 25px;/*字号*/
+	color: rgba(0,0,0,1.00);/*颜色*/
+	letter-spacing: 5px;/*字符间距*/	
+}
+/*历史渊源开始*/
+.background1{
+	background-image: url( ../img/background1.bmp);/*背景图片*/
+	background-position:top;
+	background-attachment: fixed;/*固定图片*/
+	background-repeat: no-repeat;
+	padding-top: 150px;
+}
+* {
+    box-sizing: border-box;/*使线接壤*/
+}
+/*整个时间轴设置*/
+.wrapper {
+    font-family: "仿宋";/*字号*/
+	letter-spacing: 2px;/*字间距*/
+	line-height: 32px;/*行高*/
+    flex-wrap: wrap;/*拆行*/
+    max-width: 1500px;/*宽度*/
+    margin: 0 auto;/*外边距*/
+	padding-bottom: 150px;
+}
+.area{
+    display: flex;/*原来是用渐变做的直线*/
+    flex-wrap: nowrap;/*让弹性盒元素在必要的时候拆行：*/
+    justify-content: center;/*弹性盒对象的 <div> 元素中的各项周围留有空白*/
+    width: 100%;/*宽*/
+}
+
+.date {
+    display: flex;/* 原来是用渐变做的直线 */
+    background: linear-gradient(to right, rgba(255,255,255,0.00) 45%, #FFFFFF 45%, #FFFEFE 45%, rgba(255,255,255,0.00) 50%);/*时间轴的调整*/
+    order: 2;/*设置弹性盒对象元素的顺序*/
+    text-align: center;/*文本居中*/
+    flex-basis: 100px;/*设置第二个弹性盒元素的初始长度为100像素*/
+    color: #fff;/*颜色*/
+}
+
+.date>span {
+    font-size: 23px;/*字体大小*/
+    margin: auto;/*外边距*/
+}
+
+.text {
+	text-indent: 2em;/*首行缩进*/
+    padding: 20px;/*内边距*/
+    border-radius: 25px;/*圆角*/
+    color: #FFFFFF;/*颜色*/
+    order: 3;/*设置弹性盒对象元素的顺序*/
+    width: 80%;/*宽*/
+    padding-left: 20px;/*左内填充*/
+    background: rgba(29,24,24,0.65);/*背景*/
+    margin-bottom: 3%;/*上外边距*/
+}
+@media(min-width:640px) {/*响应式*/
+    .text,.blank {
+        width: 40%;/*宽*/
+    }
+    .right .text {
+        order: 1;/*设置弹性盒对象元素的顺序*/
+        padding-right: 10px;/*右内填充*/
+        border-radius: 25px;/*圆角*/
+    }
+    .right .blank {
+        order: 3;/*设置弹性盒对象元素的顺序*/
+    }
+}
+/*历史渊源结束*/
+a{
+			text-decoration: none;
+			color: rgba(9,8,8,1.00);/*字体颜色*/
+		}
+
